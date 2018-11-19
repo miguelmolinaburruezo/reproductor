@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Monserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    background: white;
+}
+
+.padre{
+    display:flex;
+    flex-flow: column nowrap;
+}
+
+    .header{
+        background: black;
+        display:flex;
+        flex-flow: column nowrap;
+    }
+        .menu{
+            background: rgba(0,0,0,1);
+            display:flex;
+            display:flex;
+            flex-flow: row nowrap;
+            height: 100px;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255, .5 );
+        }
+            .logo{
+                flex: 1 1 auto;
+            }
+
+            .logoPrincipal{
+
+
+            }
+            .nav{
+                flex: 5 1 auto;
+            }
+                .nav a{
+                    color:white;
+                    font-size: 11px;
+                    text-transform: uppercase;
+                    padding: 0 10px;
+                    letter-spacing: 2px;
+                }
+                .nav a:hover {
+                    color: #343434;
+                }
+            .social{
+                flex: 1 1 auto;
+                display: flex;
+            }
+            .social a{
+                color:white;
+                font-size: 18px;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
+            }
+            .social a:hover{
+                color: #343434;
+            }
+        .texto-principal{
+            background: #f07b3f;
+        }
+            .h1{
+                background: #FFd460;
+            }
+    .section{
+        background: black;
+        display: flex;
+    }
+        .articulos{
+            background: #4e4e6a;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .article{
+                background: #1f6cb0;
+                flex: 1 1 40%;
+            }
+            .navegacion{
+                background: #70a3c4;
+                flex: 1 1 100%;
+            }
+        .aside{
+            background: #f73f52;
+        }
+            .publicidad{
+                background: #ffea85;
+            }
+    .footer{
+        background: black;
+        display: flex;
+        justify-content: center;
+    }
+        .pie{
+            background: #e6af2e;
+            width: 300px;
+
+        }
+
+@media all and (max-width: 800px) {
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .articulos{
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .aside{
+        flex-direction: column;
+    }
+}
